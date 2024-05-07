@@ -1,7 +1,6 @@
 import cv2 as cv
-
 # 打开视频文件
-cap = cv.VideoCapture("C:\\Users\\鑫宇韩\\Downloads\\output.mp4")
+cap = cv.VideoCapture("C:\\Users\\ESJIA\\Downloads\\bad.m4s")
 
 frame_count = 0  # 初始化帧计数器,方便后续命名
 
@@ -24,7 +23,7 @@ while cap.isOpened():
             break
 
         # 显示灰度图像（可选，为了查看过程）
-        cv.imshow('frame', gray)
+        cv.imshow('bacut', gray)
 
         # 按q键退出循环，仅仅在创建窗口时候才成立
         if cv.waitKey(5) & 0xFF == ord('q'):
@@ -37,3 +36,5 @@ while cap.isOpened():
 # 释放资源
 cap.release()
 cv.destroyAllWindows()
+
+#继续实现断点继且切割的功能
